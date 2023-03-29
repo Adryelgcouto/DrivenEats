@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Righteous', cursive;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-color: #EEEEEE;
+  grid-template-areas:
+    'header header'
+    'main main'
+    'footer footer';
+  position: relative;
+  grid-template-columns: 100%;
+}
+header {
+  width: 100%;
+  background-color: #cf2b2b;
+  height: 92px;
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+
+  left: 0;
+  grid-template-columns: 100%;
+}
+#contentHeader {
+  width: 248px;
+  height: 66px;
+  margin-left: 21px;
+  color: #ffffff;
+}
+#contentHeader > h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 44px;
+}
+#contentHeader > p {
+  font-size: 18px;
+  font-weight: 400;
+}
+main {
+  margin-left: 19px;
+  margin-top: 123px;
+  grid-area: main;
+}
+
+.size{
+  width: 100%;
+  height: 244px;
+  background-color: green;
+}
+.contentCard{
+  overflow-x: scroll;
+  display: flex;
+}
+.card{
+  margin-left: 17px;
+  width: 172px;
+  height: 216px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+.card > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card > div > img{
+  width: 144px;
+}
+.card > div > div{
+  width: 147px;
+}
+h2{
+  color: #333333;
+  font-size: 26px;
+  font-family: 'Righteous', cursive;
+  margin-bottom: 17px;
+
+}
+#drink{
+  margin-top: 69px;
+}
+footer {
+  grid-area: footer;
+  width: 100%;
+  background-color: #ffffff;
+  height: 92px;
+  position: fixed;
+  left: 0;
+  z-index: 1000;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.standard {
+  border: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50px;
+  width: 364px;
+  height: 61px;
+  font-size: 18px;
+  color: #ffffff;
+}
+#Confirm {
+  background-color: #32b72f;
+  font-weight: bold;
+}
+#realizing {
+  font-weight: 500;
+  background-color: #cbcbcb;
+}
+.disable {
+  display: none;
+}
