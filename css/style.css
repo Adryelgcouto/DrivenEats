@@ -103,7 +103,7 @@ p:nth-child(4) {
   font-weight: 300;
   color: #a6a6a6;
 }
-.insideCard > p:nth-child(5) {
+.insideCard > h4 {
   font-size: 16px;
   font-weight: 500;
   padding-top: 12px;
