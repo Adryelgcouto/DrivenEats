@@ -116,7 +116,7 @@ footer {
   height: 92px;
   position: fixed;
   left: 0;
-  z-index: 1000;
+  z-index: 10000;
   bottom: 0;
   display: flex;
   align-items: center;
@@ -146,7 +146,7 @@ footer {
   display: none;
 }
 .selecionado {
-  border: 5px solid green;
+  border: 5px solid #32B72F;
 }
 .selecionado ion-icon{
  display: inherit;
