@@ -28,31 +28,46 @@
         <h2>Primeiro, seu prato</h2>
         <div class="container food">
           <div class="contentCard">
-            <div class="card">
+            <div
+              class="card prato1 selecionado"
+              data-test="dish"
+              onclick="selecionadoFood('.prato1')"
+            >
               <div class="insideCard">
                 <img src="./img/frango_yin_yang.png" alt="" />
-                <h3>Frango Yin Yang</h3>
+                <h3 data-test="item-name">Frango Yin Yang</h3>
                 <p>Um pouco de batata,</p>
                 <p>Um pouco de salada</p>
-                <p>R$ 14,90</p>
+                <p data-test="item-price">R$ 14,90</p>
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="card">
+            <div
+              class="card prato2"
+              data-test="dish"
+              onclick="selecionadoFood('.prato2')"
+            >
               <div class="insideCard">
                 <img src="./img/frango_yin_yang.png" alt="" />
-                <h3>Frango Yin Yang</h3>
+                <h3 data-test="item-name">Frango Yin Yang</h3>
                 <p>Um pouco de batata,</p>
                 <p>Um pouco de salada</p>
-                <p>R$ 14,90</p>
+                <p data-test="item-price">R$ 14,90</p>
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
-            <div class="card">
+            <div
+              class="card prato3"
+              data-test="dish"
+              onclick="selecionadoFood('.prato3')"
+            >
               <div class="insideCard">
                 <img src="./img/frango_yin_yang.png" alt="" />
-                <h3>Frango Yin Yang</h3>
+                <h3 data-test="item-name">Frango Yin Yang</h3>
                 <p>Um pouco de batata,</p>
                 <p>Um pouco de salada</p>
-                <p>R$ 14,90</p>
+                <p data-test="item-price">R$ 14,90</p>
+                <ion-icon name="checkmark-circle"></ion-icon>
               </div>
             </div>
           </div>
@@ -60,31 +75,32 @@
         <h2>Agora, sua bebida</h2>
         <div class="container food">
           <div class="contentCard">
-            <div class="card">
+            <div class="card drink1" data-test="drink">
               <div class="insideCard">
                 <img src="./img/coca-cola.png" alt="" />
-                <h3>Coquinha gelada</h3>
+                <h3 data-test="item-name">Coquinha gelada</h3>
                 <p>Lata 350ml</p>
                 <p></p>
-                <p>R$ 4,90</p>
+                <p data-test="item-price">R$ 4,90</p>
               </div>
             </div>
-            <div class="card">
+            <div class="card selecionado drink2" data-test="drink">
               <div class="insideCard">
                 <img src="./img/coca-cola.png" alt="" />
-                <h3>Coquinha gelada</h3>
+                <h3 data-test="item-name">Coquinha gelada</h3>
                 <p>Lata 350ml</p>
                 <p></p>
-                <p>R$ 4,90</p>
+                <p data-test="item-price">R$ 4,90</p>
               </div>
+              <ion-icon name="checkmark-circle"></ion-icon>
             </div>
-            <div class="card">
+            <div class="card drink3" data-test="drink">
               <div class="insideCard">
                 <img src="./img/coca-cola.png" alt="" />
-                <h3>Coquinha gelada</h3>
+                <h3 data-test="item-name">Coquinha gelada</h3>
                 <p>Lata 350ml</p>
                 <p></p>
-                <p>R$ 4,90</p>
+                <p data-test="item-price">R$ 4,90</p>
               </div>
             </div>
           </div>
@@ -92,31 +108,31 @@
         <h2>Por fim, sua sobremesa</h2>
         <div class="container food">
           <div class="contentCard">
-            <div class="card">
+            <div class="card" data-test="dessert">
               <div class="insideCard">
                 <img src="./img/pudim.png" alt="" />
-                <h3>Pudim</h3>
+                <h3 data-test="item-name">Pudim</h3>
                 <p>Apenas pudim</p>
                 <p></p>
-                <p>R$ 7,90</p>
+                <p data-test="item-price">R$ 7,90</p>
               </div>
             </div>
-            <div class="card">
+            <div class="card" data-test="dessert">
               <div class="insideCard">
                 <img src="./img/pudim.png" alt="" />
-                <h3>Pudim</h3>
+                <h3 data-test="item-name">Pudim</h3>
                 <p>Apenas pudim</p>
                 <p></p>
-                <p>R$ 7,90</p>
+                <p data-test="item-price">R$ 7,90</p>
               </div>
             </div>
-            <div class="card">
+            <div class="card" data-test="dessert">
               <div class="insideCard">
                 <img src="./img/pudim.png" alt="" />
-                <h3>Pudim</h3>
+                <h3 data-test="item-name">Pudim</h3>
                 <p>Apenas pudim</p>
                 <p></p>
-                <p>R$ 7,90</p>
+                <p data-test="item-price">R$ 7,90</p>
               </div>
             </div>
           </div>
@@ -124,8 +140,10 @@
       </div>
     </main>
     <footer>
-      <button id="Confirm" class="standard">Fechar Pedido</button>
-      <button id="realizing " class="standard disable">
+      <button id="Confirm" data-test="order-btn" class="standard disable">
+        Fechar Pedido
+      </button>
+      <button id="realizing " data-test="order-btn" class="standard">
         Selecione os 3 itens <br />
         para fechar o pedido
       </button>
