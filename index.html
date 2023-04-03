@@ -29,7 +29,7 @@
         <div class="container food">
           <div class="contentCard">
             <div
-              class="card prato1 selecionado"
+              class="card prato1"
               data-test="dish"
               onclick="selecionadoFood('.prato1')"
             >
@@ -73,18 +73,13 @@
           </div>
         </div>
         <h2>Agora, sua bebida</h2>
-        <div class="container food">
+        <div class="container drink">
           <div class="contentCard">
-            <div class="card drink1" data-test="drink">
-              <div class="insideCard">
-                <img src="./img/coca-cola.png" alt="" />
-                <h3 data-test="item-name">Coquinha gelada</h3>
-                <p>Lata 350ml</p>
-                <p></p>
-                <p data-test="item-price">R$ 4,90</p>
-              </div>
-            </div>
-            <div class="card selecionado drink2" data-test="drink">
+            <div
+              class="card drink1"
+              onclick="selecionadoDrink('.drink1')"
+              data-test="drink"
+            >
               <div class="insideCard">
                 <img src="./img/coca-cola.png" alt="" />
                 <h3 data-test="item-name">Coquinha gelada</h3>
@@ -94,7 +89,11 @@
               </div>
               <ion-icon name="checkmark-circle"></ion-icon>
             </div>
-            <div class="card drink3" data-test="drink">
+            <div
+              class="card drink2"
+              onclick="selecionadoDrink('.drink2')"
+              data-test="drink"
+            >
               <div class="insideCard">
                 <img src="./img/coca-cola.png" alt="" />
                 <h3 data-test="item-name">Coquinha gelada</h3>
@@ -102,13 +101,32 @@
                 <p></p>
                 <p data-test="item-price">R$ 4,90</p>
               </div>
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div
+              class="card drink3"
+              onclick="selecionadoDrink('.drink3')"
+              data-test="drink"
+            >
+              <div class="insideCard">
+                <img src="./img/coca-cola.png" alt="" />
+                <h3 data-test="item-name">Coquinha gelada</h3>
+                <p>Lata 350ml</p>
+                <p></p>
+                <p data-test="item-price">R$ 4,90</p>
+              </div>
+              <ion-icon name="checkmark-circle"></ion-icon>
             </div>
           </div>
         </div>
         <h2>Por fim, sua sobremesa</h2>
-        <div class="container food">
+        <div class="container dessert">
           <div class="contentCard">
-            <div class="card" data-test="dessert">
+            <div
+              class="card dessert1"
+              onclick="selecionadoDessert('.dessert1')"
+              data-test="dessert"
+            >
               <div class="insideCard">
                 <img src="./img/pudim.png" alt="" />
                 <h3 data-test="item-name">Pudim</h3>
@@ -116,8 +134,13 @@
                 <p></p>
                 <p data-test="item-price">R$ 7,90</p>
               </div>
+              <ion-icon name="checkmark-circle"></ion-icon>
             </div>
-            <div class="card" data-test="dessert">
+            <div
+              class="card dessert2"
+              onclick="selecionadoDessert('.dessert2')"
+              data-test="dessert"
+            >
               <div class="insideCard">
                 <img src="./img/pudim.png" alt="" />
                 <h3 data-test="item-name">Pudim</h3>
@@ -125,8 +148,13 @@
                 <p></p>
                 <p data-test="item-price">R$ 7,90</p>
               </div>
+              <ion-icon name="checkmark-circle"></ion-icon>
             </div>
-            <div class="card" data-test="dessert">
+            <div
+              class="card dessert3"
+              onclick="selecionadoDessert('.dessert3')"
+              data-test="dessert"
+            >
               <div class="insideCard">
                 <img src="./img/pudim.png" alt="" />
                 <h3 data-test="item-name">Pudim</h3>
@@ -134,6 +162,7 @@
                 <p></p>
                 <p data-test="item-price">R$ 7,90</p>
               </div>
+              <ion-icon name="checkmark-circle"></ion-icon>
             </div>
           </div>
         </div>
