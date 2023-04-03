@@ -134,7 +134,7 @@ footer {
   font-size: 18px;
   color: #ffffff;
 }
-#Confirm {
+.confirm {
   background-color: #32b72f;
   font-weight: bold;
 }
